@@ -1,0 +1,133 @@
+
+
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope..menu-button 
+ *
+ *= require_tree .
+ *= require_self
+ */
+ 
+
+  .navbar a.brand { font-size: 18px; }
+  .navbar a.brand:hover {
+    color: #fff;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+  footer {
+    background-color: #498fb2 ;
+    padding: 50px 0;
+  }
+
+
+  #menu-button {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 700;
+    border: none;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    background-color:#273942;
+    box-shadow: 0 5px 0 #498fb2;
+  }
+
+  #menu-button-green {
+    background: #273942;
+    color: #fff;
+    box-shadow: 0 5px 0 #273942;
+  }
+
+  #menu-button:hover {
+    background: #273942;
+    color: #fff;
+    box-shadow: 0 5px 0 #000000;
+  }
+
+  #menu-button-green:active {
+    position: relative;
+    top: 5px;
+    box-shadow: none;
+  }
+
+  table {
+    width: 100%;
+    position: left;
+    border: 0px solid #000000;
+  }
+
+  h1, h2, h3, h4 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #273942;
+  }
+
+  #idColorUm {
+    background-color: #498fb2;
+  }
+  #idColorDois {
+    background-color: #273942;
+  }
+  #idText {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+    text-align: center;
+    height: 40px;
+    color: #fff;
+    background: #273942;
+
+  }
+  #idTextDois {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+    color: #fff;
+    background: #273942;
+  }
+  #idTextAlin {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background: #C0C0C0;
+    text-align: center;
+    height: 40px;
+  }
+  #idTextAlinDois{
+    background: #C0C0C0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  #idTextTres {
+    color: #fff;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+
+  #Alin {
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+
+  #TextTam {
+    font-size: 18px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #273942;
+  }
+
+  #TextLay{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+    color: #fff;
+    text-align: center;
+  }
+  

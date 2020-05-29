@@ -1,0 +1,41 @@
+<%= form_for(@dado) do |f| %>
+  <% if @dado.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@dado.errors.count, "error") %> prohibited this dado from being saved:</h2>
+
+      <ul>
+      <% @dado.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field" id="Alin">
+  <p  id="TextTam" >Nome: <%= f.text_field :nome %></p>
+  </div>
+
+  <div class="field" id="Alin">
+  <p  id="TextTam" >Sobrenome: <%= f.text_field :sobrenome %></p>
+  </div>
+
+  <div class="field" id="Alin">
+  <p  id="TextTam" >CPF: <%= f.text_field :cpf %></p>
+  </div>
+
+  <div class="field" id="Alin">
+  <p  id="TextTam" >Sexo: <%= f.text_field :sexo %></p>
+  </div>
+
+  <div class="field" id="Alin">
+  <p  id="TextTam" >E-mail: <%= f.text_field :email %></p>
+  </div>
+
+  <div class="field" id="Alin">
+  <p  id="TextTam" >Pagamento: <%= f.text_field :pagamento %></p>
+  </div>
+
+  <div class="actions" id="Alin">
+    <%= f.submit %>
+  </div>
+<% end %>

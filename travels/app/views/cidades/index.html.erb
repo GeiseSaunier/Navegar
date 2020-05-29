@@ -1,0 +1,36 @@
+<p id="notice"><%= notice %></p>
+
+<table class="table">
+  <tr>
+  <td height="50px" colspan="5" id="idColorUm" ></td>
+  </tr>
+  <tr>
+    <td colspan="3" ><h1>LISTA DE CIDADES</h1></td>
+  </tr>
+  <tr>
+    <td wigth="10%" height="150px"><a id="menu-button" id="menu-button-green" href="/trechos"> Trechos </a></td>
+    <td ><a id="menu-button" id="menu-button-green" href="/dados"> Dados </a></td>
+  </tr>
+    <tr>
+      <td width="30%"id="idTextDois">Nome</td>
+      <td   id="idText">Estado</td>
+      
+    </tr>
+
+    <% @cidades.each do |cidade| %>
+      <tr>
+        <td id="idTextAlinDois"><%= cidade.nome %></td>
+        <td id="idTextAlin"><%= cidade.estado %></td>
+        <td id="idTextAlin"><%= link_to 'Mostrar', cidade %></td>
+    <!--    <td id="idTextAlin"><%= link_to 'Edit', edit_cidade_path(cidade) %></td> -->
+    <!--   <td id="idTextAlin"><%= link_to 'Destroy', cidade, method: :delete, data: { confirm: 'Are you sure?' } %></td> -->
+      </tr>
+    <% end %>
+    <tr>
+      <td colspan="3" height="200px" id="idTextTres"><%= link_to 'Nova Cidade', new_cidade_path %>
+      </td>
+    </tr>
+</table>
+
+<br>
+

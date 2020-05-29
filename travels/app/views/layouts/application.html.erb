@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Travels</title>
+  <link rel="stylesheet" href="https://railsgirls.com/assets/bootstrap.css">
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<div class="container">
+  <%= yield %>
+</div>
+
+<footer>
+  <div class="container" id="TextLay">
+    Promoções de passagens saindo de:
+  </div>
+</footer>
+
+</body>
+
+<div class="navbar navbar-fixed-top">
+  <div class="navbar-inner">
+    <div class="container" id="Alin">
+      <br>
+      <a class="brand" href="/"> &nbsp; &nbsp; Parintins &nbsp; &nbsp;</a>
+      <a class="brand" href="/"> &nbsp; &nbsp; Maués &nbsp; &nbsp;</a>
+      <a class="brand" href="/"> &nbsp; &nbsp; Manaus &nbsp; &nbsp;</a>
+      <ul class="nav">
+      </ul>
+    </div>
+  </div>
+</div>
+
+</html>

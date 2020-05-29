@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  origem: MyString
+  destino: MyString
+  data_ida: 2019-11-26
+  horario_ida: MyString
+  data_volta: MyString
+  horario_volta: MyString
+
+two:
+  origem: MyString
+  destino: MyString
+  data_ida: 2019-11-26
+  horario_ida: MyString
+  data_volta: MyString
+  horario_volta: MyString

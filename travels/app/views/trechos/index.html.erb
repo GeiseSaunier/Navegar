@@ -1,0 +1,46 @@
+<html>
+
+  <p id="notice"><%= notice %></p>
+
+  <body>
+    <table>
+        <tr>
+          <td id="idColorUm" height="240px" colspan="7">
+          </td>
+        </tr>
+        <tr>
+          <td height="50px" width="100px"><a id="menu-button" id="menu-button-green" href="/search"> Pesquisa </a></td>
+          <td width="90px"><a id="menu-button" id="menu-button-green" href="/cadastrar_cidades"> Cidades </a></td>
+          <td colspan="5" width="100px"><a id="menu-button" id="menu-button-green" href="/dados"> Dados </a></td>
+        </tr>  
+        <tr>
+          <td height="100px" colspan="7"><h1>LISTA DE TRECHOS</h1></td>
+        </tr>
+         
+        <tr>
+          <td id="idTextDois">Origem</td>
+          <td id="idText">Destino</td>
+          <td id="idText">Data Ida</td>
+          <td id="idText">Horario Ida</td>
+          <td id="idText">Data Volta</td>
+          <td id="idText">Horario Volta</td>
+          <td></td>          
+        </tr>
+
+        <% @trechos.each do |trecho| %>
+          <tr>
+            <td id="idTextAlinDois"><%= trecho.origem %></td>
+            <td id="idTextAlin"><%= trecho.destino %></td>
+            <td id="idTextAlin"><%= trecho.data_ida %></td>
+            <td id="idTextAlin"><%= trecho.horario_ida %></td>
+            <td id="idTextAlin"><%= trecho.data_volta %></td>
+            <td id="idTextAlin"><%= trecho.horario_volta %></td>
+            <td id="idTextTres"><%= link_to 'Mostrar', trecho %></td>
+          </tr>
+        <% end %>
+        <tr>
+          <td colspan="7" height="200px" id="idTextTres"><%= link_to 'Novo Trecho', new_trecho_path %></td>
+        </tr>
+    </table>
+  </body>
+</html>

@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Nome:</strong>
+  <%= @dado.nome %>
+</p>
+
+<p>
+  <strong>Sobrenome:</strong>
+  <%= @dado.sobrenome %>
+</p>
+
+<p>
+  <strong>Cpf:</strong>
+  <%= @dado.cpf %>
+</p>
+
+<p>
+  <strong>Sexo:</strong>
+  <%= @dado.sexo %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @dado.email %>
+</p>
+
+<p>
+  <strong>Pagamento:</strong>
+  <%= @dado.pagamento %>
+</p>
+
+<%= link_to 'Edit', edit_dado_path(@dado) %> |
+<%= link_to 'Back', dados_path %>

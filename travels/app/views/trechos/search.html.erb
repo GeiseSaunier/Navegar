@@ -1,0 +1,33 @@
+<table>
+    <tr>
+    <td height="50px" id="idColorUm"></td>
+    </tr>
+</table>
+
+<%= form_for :search, url: search_trechos_path, method: :get do |form| %>
+    <p  id="TextTam" >Buscar Por Origem: <%= form.text_field :origem, value: params[:origem].presence && params[:origem] %>&nbsp; <%= form.submit 'Buscar' %></p>
+    <p  id="TextTam" >Buscar Por Destino: <%= form.text_field :destino, value: params[:destino].presence && params[:destino] %>&nbsp; <%= form.submit 'Buscar' %></p>
+    
+<% end %>
+  
+
+<% @trechos.each do |trecho| %>
+    <br>
+    <table>
+        <tr>
+            <td colspan="9"></td>
+        </tr>
+        <tr>
+            <td id="idTextAlin"><%= trecho.origem %></td>
+            <td id="idTextAlin"><%= trecho.destino %></td>
+            <td id="idTextAlin"><%= trecho.data_ida %></td>
+            <td id="idTextAlin"><%= trecho.horario_ida %></td>
+            <td id="idTextAlin"><%= trecho.data_volta %></td>
+            <td id="idTextAlin"><%= trecho.horario_volta %></td>
+            <td id="idTextAlin" colspan="3"><%= link_to 'Show', trecho %></td>
+<!--            <td><%= link_to 'Edit', edit_trecho_path(trecho) %></td> -->
+<!--            <td><%= link_to 'Destroy', trecho, method: :delete, data: { confirm: 'Are you sure?' } %></td> -->
+        </tr>
+    </br>
+    </table>
+<% end %>

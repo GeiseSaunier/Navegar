@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Origem:</strong>
+  <%= @trecho.origem %>
+</p>
+
+<p>
+  <strong>Destino:</strong>
+  <%= @trecho.destino %>
+</p>
+
+<p>
+  <strong>Data ida:</strong>
+  <%= @trecho.data_ida %>
+</p>
+
+<p>
+  <strong>Horario ida:</strong>
+  <%= @trecho.horario_ida %>
+</p>
+
+<p>
+  <strong>Data volta:</strong>
+  <%= @trecho.data_volta %>
+</p>
+
+<p>
+  <strong>Horario volta:</strong>
+  <%= @trecho.horario_volta %>
+</p>
+
+<%= link_to 'Edit', edit_trecho_path(@trecho) %> |
+<%= link_to 'Back', trechos_path %>

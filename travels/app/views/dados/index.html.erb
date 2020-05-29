@@ -1,0 +1,42 @@
+<p id="notice"><%= notice %></p>
+
+<table>
+    <tr>
+    <td colspan="9" height="50px" width="100%" id="idColorUm"></td>
+    </td>
+    <tr>
+      <td colspan="9" height="40px"><h1>LISTA DE DADOS</h1></td>
+    </td>
+    <tr>
+      <td width="4%" height="150px"><a id="menu-button" id="menu-button-green" href="/trechos"> Dados </a></td>
+      <td colspan="8"><a id="menu-button" id="menu-button-green" href="/cadastrar_cidades"> Cidades </a></td>
+    </td>
+    <tr>
+      <td id="idTextDois">Nome</td>
+      <td id="idText">Sobrenome</td>
+      <td id="idText">Cpf</td>
+      <td id="idText">Sexo</td>
+      <td id="idText">Email</td>
+      <td id="idText">Pagamento</td>
+    </tr>
+
+    <% @dados.each do |dado| %>
+      <tr>
+        <td id="idTextAlinDois"><%= dado.nome %></td>
+        <td id="idTextAlin"><%= dado.sobrenome %></td>
+        <td id="idTextAlin"><%= dado.cpf %></td>
+        <td id="idTextAlin"><%= dado.sexo %></td>
+        <td id="idTextAlin"><%= dado.email %></td>
+        <td id="idTextAlin"><%= dado.pagamento %></td>
+        <td colspan="3" id="idTextTres"><%= link_to 'Mostrar', dado %></td>
+<!--        <td><%= link_to 'Edit', edit_dado_path(dado) %></td> -->
+<!--        <td><%= link_to 'Destroy', dado, method: :delete, data: { confirm: 'Are you sure?' } %></td> -->
+      </tr>
+    <% end %>
+    <tr>
+      <td colspan="7" height="200px" id="idTextTres"><%= link_to 'Novo Dado', new_dado_path %></td>
+    </tr>
+</table>
+
+
+
